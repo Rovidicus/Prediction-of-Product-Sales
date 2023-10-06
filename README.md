@@ -19,3 +19,7 @@
 5. I made a countplot of item types sorted by fat content. Only in meat and breakfast did "Regular" display more than "Low Fat".
 
 ![ItemTypeFatContent](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/844100e9-c7cc-4c22-b057-3e904c4d04ed)
+
+6. A masked heatmap of the numerical data shows a moderate correlation of 0.57 between Item Store Sales and Max Retail Price
+
+![Heatmap](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/ac43df22-4407-43b5-9c0b-da13e8405c16)
