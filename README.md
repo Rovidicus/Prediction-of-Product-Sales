@@ -13,8 +13,8 @@ Nonetheless, a coursery look at Item Store Sales data paints a more nuanced port
 
 ### Data:
 Data can include source and high-level description (e.g. # obs)
-#### The stakeholders have provided us with two links:
-<ul><li> <a href="[https://drive.google.com/file/d/1Jach7HsZVywhJnUJmkyqje52ho_0VJgo/view?usp=sharing](https://drive.google.com/file/d/1syH81TVrbBsdymLT_jl2JIf6IjPXtSQw/view)" target="_blank">Share URL to a .csv file</a> <ul><li>A spreadsheet of item and outlet information. </li></ul></li><li>
+#### Here is the provided spreadsheet of item and outlet information: [Grocery Item Sales](https://drive.google.com/file/d/1syH81TVrbBsdymLT_jl2JIf6IjPXtSQw/view)
+#### The dataset houses information on both the items and outlets in which they were sold, factoring in nine feature columns (Item ID excluded) to explore correlations with item sales.
 
 
 
