@@ -1,3 +1,58 @@
+# Price Hills, Sales Climbs
+## Grocery Items Price vs Sales
+
+**Luke Hobbs**: 
+
+### Business problem:
+1. What correlates to increased item store sales?
+- It sounds intuitive: the higher the price, the lower the demand. Customers want to economise, catch golden deals, and feel respected. 
+Nonetheless, a coursery look at Item Store Sales data paints a more nuanced portrait. 
+2. Our stakeholders are the grocery outlet owners
+3. The aim is to increase sales revenue
+4. The plan is to adapt and modify businesses based on actionable, analytics backed information
+
+### Data:
+Data can include source and high-level description (e.g. # obs)
+#### The stakeholders have provided us with two links:
+<ul><li> <a href="[https://drive.google.com/file/d/1Jach7HsZVywhJnUJmkyqje52ho_0VJgo/view?usp=sharing](https://drive.google.com/file/d/1syH81TVrbBsdymLT_jl2JIf6IjPXtSQw/view)" target="_blank">Share URL to a .csv file</a> <ul><li>A spreadsheet of item and outlet information. </li></ul></li><li>
+
+
+
+## Methods
+- Data preparation steps with explanation and justification for choices
+- 
+
+## Results
+
+### Here are examples of how to embed images from your sub-folder
+
+
+#### Visual 1 Title
+![sample image](project1_sample_image.png)
+
+> Sentence about visualization.
+
+#### Visual 2 Title
+
+## Model
+
+Describe your final model
+
+Report the most important metrics
+
+Refer to the metrics to describe how well the model would solve the business problem
+
+## Recommendations:
+
+More of your own text here
+
+
+## Limitations & Next Steps
+
+More of your own text here
+
+
+
 # Prediction-of-Product-Sales
 ## Sales prediction model for food items sold at various stores
 1. Using a histogram, I got a bird's eye view of product weights as well as how many weights remain unaccounted for with the bar left of 0.
