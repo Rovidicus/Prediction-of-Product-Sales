@@ -16,11 +16,10 @@ Data can include source and high-level description (e.g. # obs)
 #### Here is the provided spreadsheet of item and outlet information: [Grocery Item Sales](https://drive.google.com/file/d/1syH81TVrbBsdymLT_jl2JIf6IjPXtSQw/view)
 #### The dataset houses information on both the items and outlets in which they were sold, factoring in nine feature columns (Item ID excluded) to explore correlations with item sales.
 
-
-
 ## Methods
-- Data preparation steps with explanation and justification for choices
-- 
+- This dataset has 8523 rows, and 12 columns. As mentioned above, Item ID column was dropped as it's a high cardinality feature not useful for analysis, leaving 10 features with the target, Item_Outlet_Sales.
+- A quick visual of missing values:
+  ![](![MissingNo](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c675b525-7e35-4d41-913a-a7a038badbf6))
 
 ## Results
 
