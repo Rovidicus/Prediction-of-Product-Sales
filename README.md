@@ -30,59 +30,58 @@ Data can include source and high-level description (e.g. # obs)
 -   Statistics of columns was checked for strange and impossible values. Item Visibility had 526 values at 0%. Obviously every item has some percentage visibility.
 -     Mean was imputed for missing values with standard scaling.
 ## Results
-### A default linear regression model: ![](Prediction-of-Product-Sales_Project1_Part6_core ipynb at main · Rovidicus_Prediction-of-Product-Sales](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/854b5aff-b40f-4364-8e4d-1dff5ed52cbc)
 
-### Here are examples of how to embed images from your sub-folder
+### Standard linear regression model: 
+------------------------------------------------------------
+Regression Metrics: Training Data
+------------------------------------------------------------
+- MAE = 847.126
+- MSE = 1,297,559.357
+- RMSE = 1,139.105
+- R^2 = 0.562
 
+------------------------------------------------------------
+Regression Metrics: Test Data
+------------------------------------------------------------
+- MAE = 804.105
+- MSE = 1,194,333.006
+- RMSE = 1,092.855
+- R^2 = 0.567
 
-#### Visual 1 Title
-![sample image](project1_sample_image.png)
+### Random Forest
 
-> Sentence about visualization.
+------------------------------------------------------------
+Regression Metrics: Training Data
+------------------------------------------------------------
+- MAE = 661.548
+- MSE = 889,858.636
+- RMSE = 943.323
+- R^2 = 0.699
 
-#### Visual 2 Title
+------------------------------------------------------------
+Regression Metrics: Test Data
+------------------------------------------------------------
+- MAE = 733.109
+- MSE = 1,113,840.201
+- RMSE = 1,055.386
+- R^2 = 0.596
 
 ## Model
 
-Describe your final model
+The Linear Regression model had high bias with training and testing data similarly low in r2 and other metrics.
+The Random Forest model scored much higher on training r2 and a little higher on testing r2. It's not ready for deployment but may be on the right track with some parameter tweaking.
+As is, the Random Forest can only account for about 60% error. A bagged tree model may be useful to deploy in future.
 
-Report the most important metrics
-
-Refer to the metrics to describe how well the model would solve the business problem
-
-## Recommendations:
-
-More of your own text here
-
-
-## Limitations & Next Steps
-
-More of your own text here
-
-
-
-# Prediction-of-Product-Sales
-## Sales prediction model for food items sold at various stores
-1. Using a histogram, I got a bird's eye view of product weights as well as how many weights remain unaccounted for with the bar left of 0.
-
-![WeightDistribution](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/90fa1148-399b-4ac8-b97e-b7f62793359c)
-
-2. Another histogram displays the maximum retail price of items
-
-![MaxRetailPrice](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/570d2014-0b75-4a92-b813-d4e744746965)
-
-3. This group boxplot gives an idea of sales figures by store size. It may be curious why medium sized stores outperform the other stores, but some data is still missing.
-
-![SalesbySizeBoxplots](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/6e68cdb9-b4fa-4256-a50c-44f4459abe43)
-
-4. Here is a violin plot of item store sales by store type. The type 3 supermarket well outperforms its siblings with grocery stores only yeilding a fraction of sales.
-
-![SalesbyStoreViolin](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/7a6d847a-caa5-42e4-8896-af53f935e999)
-
-5. I made a countplot of item types sorted by fat content. Only in meat and breakfast did "Regular" display more than "Low Fat".
-
-![ItemTypeFatContent](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/844100e9-c7cc-4c22-b057-3e904c4d04ed)
-
-6. A masked heatmap of the numerical data shows a moderate correlation of 0.57 between Item Store Sales and Max Retail Price
+1. A masked heatmap of the numerical data shows a moderate correlation of 0.57 between Item Store Sales and Max Retail Price
 
 ![Heatmap](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/ac43df22-4407-43b5-9c0b-da13e8405c16)
+
+2. Here is a comparison of Max Retail Price to Item Sales, a direct positive correlation visualized.
+
+![Price Sales](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c06ed4c2-bc5d-4186-85d8-6782b7120132)
+
+3. Strangely there is an inverse correlation of percentage visibility in a store with that item's sales.
+
+![Visibility Sales](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/6b86fd04-dcfd-43a9-8bd6-48ab28b5c00a)
+
+For any additional questions, please contact me at rovidicus@hotmail.com
