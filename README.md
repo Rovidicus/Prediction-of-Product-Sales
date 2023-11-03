@@ -18,10 +18,19 @@ Data can include source and high-level description (e.g. # obs)
 
 ## Methods
 - This dataset has 8523 rows, and 12 columns. As mentioned above, Item ID column was dropped as it's a high cardinality feature not useful for analysis, leaving 10 features with the target, Item_Outlet_Sales.
-- A quick visual of missing values:
-  ![](![MissingNo](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c675b525-7e35-4d41-913a-a7a038badbf6))
-
+- No duplicates detected but some null values. A quick visual of missing values:
+  ![](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c675b525-7e35-4d41-913a-a7a038badbf6)
+### Categorical columns displayed: ['Item_Fat_Content', 'Item_Type', 'Outlet_Identifier', 'Outlet_Location_Type', 'Outlet_Type']
+-   A for loop of object column value counts revealed Item Fat Content had entry errors which were sorted to just Low Fat and Regular.
+-   Columns were one hot encoded with simple imputation
+### Only one ordinal column: Outlet Size
+-   Outlet Size had an awkward label of "High" which I changed to "Large"
+-   So many values were missing they were imputed into their own constant. Feature was encoded smallest to largest, missing last.
+### Numeric columns displayed: ['Item_Weight', 'Item_Visibility', 'Item_MRP', 'Outlet_Establishment_Year', 'Item_Outlet_Sales']
+-   Statistics of columns was checked for strange and impossible values. Item Visibility had 526 values at 0%. Obviously every item has some percentage visibility.
+-     Mean was imputed for missing values with standard scaling.
 ## Results
+### A default linear regression model: ![](Prediction-of-Product-Sales_Project1_Part6_core ipynb at main · Rovidicus_Prediction-of-Product-Sales](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/854b5aff-b40f-4364-8e4d-1dff5ed52cbc)
 
 ### Here are examples of how to embed images from your sub-folder
 
