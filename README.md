@@ -84,4 +84,15 @@ As is, the Random Forest can only account for about 60% error. A bagged tree mod
 
 ![Visibility Sales](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/6b86fd04-dcfd-43a9-8bd6-48ab28b5c00a)
 
+## Coefficient Results
+
+1. This is a bar plot of coefficients using linear regression. Seafood and starchy food show strong sales returns with dairy and 'other' items returning poor figures.
+
+![LinRegCoeff](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c67c6c54-5982-4336-8ec0-5c434a2d97d4)
+
+2. Here we have a plot with a random forest that returned better metrics in modeling than the linear regressor. Max Retail Price appears again to be an indicator of great sales.
+
+![RandomForestCoeff](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/ca4ca146-63b2-4079-b47b-ec2797deef44)
+
+
 For any additional questions, please contact me at rovidicus@hotmail.com
