@@ -94,5 +94,7 @@ As is, the Random Forest can only account for about 60% error. A bagged tree mod
 
 ![RandomForestCoeff](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/ca4ca146-63b2-4079-b47b-ec2797deef44)
 
+## Were we to extrapolate the need for bigger max retail prices with positive returns, it would indicate some items such as dairy (a staple food group with a broad consumer market) are underpriced and should be adjusted.
+## Other items is more difficult to say as they may be more niche and have limited demand that would be stifled by higher prices.
 
 For any additional questions, please contact me at rovidicus@hotmail.com
