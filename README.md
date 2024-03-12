@@ -1,6 +1,6 @@
 # Grocery Sales Investigation
 
-**Luke Hobbs**: 
+**Luke Hobbs**
 
 ### Business problem: How can we improve item sales?
 1. What correlates to increased item store sales?
@@ -9,7 +9,7 @@
 4. Plan: adapt and modify businesses based on actionable, analytics backed information
 
 ### Data:
-Data can include source and high-level description (e.g. # obs)
+
 #### Here is the provided spreadsheet of item and outlet information: [Grocery Item Sales](https://drive.google.com/file/d/1syH81TVrbBsdymLT_jl2JIf6IjPXtSQw/view)
 #### The dataset houses information on both the items and outlets in which they were sold, factoring in nine feature columns (Item ID excluded) to explore correlations with item sales.
 
@@ -85,17 +85,33 @@ As is, the Random Forest can only account for about 60% error. A bagged tree mod
 
 1. This is a bar plot of coefficients using linear regression. Seafood and starchy food show strong sales returns with dairy and 'other' items returning poor figures.
 
-![LinRegCoeff](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c67c6c54-5982-4336-8ec0-5c434a2d97d4)
+![linreg_15coeffs](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/a6a63f10-b4e8-4933-a79e-f71e8ddcaa2b)
 
 2. Here we have a plot with a random forest that returned better metrics in modeling than the linear regressor. Max Retail Price appears again to be an indicator of great sales.
 
-![RandomForestCoeff](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/ca4ca146-63b2-4079-b47b-ec2797deef44)
+![rf_importances](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/c03477d8-04a6-46d2-96e2-0a3d5d88d88d)
 
 ### Some food items are staples in diets for which there'll be a constant and convenient demand for (like starchy foods and seafood). Given the positive correlation with higher prices and higher sales, such foods in consistent demand would be more inelastic to price markup. 
 ### Other items is more difficult to say as they may be more niche and have limited demand that would be stifled by higher prices.
 
 ## By Store
 
+![StoreTypeCountplot](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/1e265c35-6741-4283-bc05-8136b32fbc06)
 
+1. Here we see the lion's share of our items are sold in the Type 1 supermarkets. As such we may expect our Type 1 supermarkets to also have the highest sales figures of our stores.
+
+![StoreTypeVsItemSales](https://github.com/Rovidicus/Prediction-of-Product-Sales/assets/141533406/64d471c6-02e5-499c-ab4c-56454fff78de)
+
+2. Despite representing a small fraction of total items in the dataset, Type 3 supermarkets outpace all other stores in sales and nearly twice that of Type 1 stores. There are many things to be gleamed from this:
+   - What makes Type 3 supermarkets so successful? Can our other supermarkets model or otherwise emulate these stores?
+   - More investment in Type 3 supermarkets has the potential of significant returns.
+   - Does location and different inventory selection play a part in sales?
+   - Are there factors outside the dataset (management, marketing, store layout, staff, etc.) that affect these sales figures?
+   
+## Recommendations: 
+1. Invest in Type 3 supermarkets. Learn what sets these stores apart. Outlet 27 in particular has exemplary sales records.
+2. Outlets 10 and 19 need scrutiny for why sales are lagging.
+3. Seafood in particular correlates with good sales. Promoting seafood could be a boon.
+4. Our Tier 3 location type bears better sales returns than other places. Keeping an eye on opportunities for expansion into Tier 3 locations may be rewarding.
 
 For any additional questions, please contact me at rovidicus@hotmail.com
